@@ -1,0 +1,60 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background-image: url(/img/c5.jpg);">
+            <br>
+            <div class="text-right">
+                <a href="/links/restadd" class='btn btn-primary'>Agregar Nuevo</a>
+            </div>
+            <br>
+            <h2 style="color:white; font-size: 40px;">Tabla de Restaurantes</h2>
+            <br>
+            <div class="col-md-10">
+                <div class="card ">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                   <th id="tablarest">Nombre</th>
+                                    <th id="tablarest">Direccion</th>
+                                    <th id="tablarest">Descripcion</th>
+                                    <th id="tablarest">Telefono</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {{#each rests}}
+                <div class="col-md-12">
+                    <div class="card ">
+                        <div class="card-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr class="info">
+                                        <td>{{name}}</td>
+                                        <td>{{address}}</td>
+                                        <td>{{description}}</td>
+                                        <td>{{phone_numbre}}</td>
+                                        <td></td>
+                                        <td><a href="/links/restedit/{{id}}" class="btn btn-primary"> EDITAR</a></td>
+                                        <td><a href="/links/restdelet/{{id}}" class="btn btn-danger"> ELIMINAR</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {{else}}
+                <div class="col-md-4"></div>
+                <div class="col-md-4 mx-auto">
+                    <div class="card card-body text-center">
+                        <p><h2>No existe ningun restaurante</h2></p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

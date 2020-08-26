@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background-image: url(/img/c5.jpg);">
+            <br>
+            <div class="text-right">
+                <h1 style="color:white; font-size: 40px; background-color:black">{{user.name}} {{user.last_name}}</h1>
+            </div>
+            <br>
+            <h2 style="color:white; font-size: 40px;">Tabla de Reservaciones</h2>
+            <br>
+            <div class="col-md-8">
+                <div class="card ">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                   <th id="tablarest">Restaurante</th>
+                                    <th id="tablarest">Fecha</th>
+                                    <th id="tablarest">Numero de Personas</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {{#each resv}}
+                <div class="col-md-12">
+                    <div class="card ">
+                        <div class="card-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr class="info">
+                                        <td>{{name}}</td>
+                                        <td>{{fecha}}</td>
+                                        <td>{{per_adicional}}</td>
+                                        <td></td>
+                                        <td><a href="/links/resvedit/{{id_resv}}" class="btn btn-primary"> EDITAR</a></td>
+                                        <td><a href="/links/resvdelet/{{id_resv}}" class="btn btn-danger"> ELIMINAR</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {{else}}
+                <div class="col-md-4"></div>
+                <div class="col-md-4 mx-auto">
+                    <div class="card card-body text-center">
+                        <p><h2 style="color:white; font-size: 40px;">No existe ninguna Reservacion</h2></p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

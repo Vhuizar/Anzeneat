@@ -1,0 +1,56 @@
+<div class="container">
+    <br>
+    <br>
+    <div class="row ">
+        <div class=" text-center">
+            <div class="card text-center">
+                <div class="card-cody">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" style="background-image: url(/img/admin_fondo.jpg);">
+                        <h1 id="texttitle">Crear Usuario</h1>
+                        <br>
+                        <form action="/creuser" method="POST" class="form-horizontal text-center border border-light p-5"  >
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label" id="usertext" >Nombre</label>
+                                <div class="col-sm-6">
+                                    <input type="text" style="height:40px" class="form-control" name="name" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label"id="usertext" >Apellidos</label>
+                                <div class="col-sm-6">
+                                    <input type="text" style="height:40px"  class="form-control" name="last_name"  placeholder="Apellidos">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label" id="usertext" >Correo Electronico</label>
+                                <div class="col-sm-6">
+                                    <input type="email" style="height:40px"  class="form-control" name="email" placeholder="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label" id="usertext" >Contraseña</label>
+                                <div class="col-sm-6">
+                                    <input type="password" style="height:40px"  class="form-control" name="password" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-6">
+                                    <input type="text"  class="form-control hidden" name="rol" value="Usuario">
+                                </div>
+                            </div>
+                            
+                            <br>
+                            <div class="form-group" >
+                                <div class="col-sm-offset-2 col-sm-4" style="left: 250px;" >
+                                    <button class="btn btn-block btn-success col-md-2" style="font-size:17px">Guardar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col md-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

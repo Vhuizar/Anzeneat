@@ -1,0 +1,24 @@
+<div class="container ">
+    <div class="row" >
+        <div class="col-md-8 text-center">
+            <div class="card text-center">
+                <div class="card-cody">
+                    <form action="/links/edit/{{link.id}}" method="POST">
+                        <div class="form-group">
+                            <input type="text" value="{{link.title}}" class="form-control" name="title" id="" placeholder="Titulo link" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="url"value="{{link.url}}" class="form-control" name="url" id="" placeholder="link" autofocus>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="descripcion" rows="2" class="form-control" placeholder="descripcion">{{link.descripcion}}</textarea>
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-block btn-success" name="send" id="" placeholder="Enviar">Guardar</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

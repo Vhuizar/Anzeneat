@@ -1,0 +1,82 @@
+<nav class="navbar  navbar-static-top" style="background-color: darkred;">
+  <div class="containe">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a href="/links" class="navbar-brand" style="color: white;">Seikyro System</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="/links/listarest" style="color: white;">Restaurantes<span class="sr-only">(current)</span></a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" style="color: white;" data-toggle="dropdown" role="button"
+              aria-haspopup="true" aria-expanded="false">Login <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/links/login">login</a></li>
+              <li><a href="#" data-toggle="modal" data-target="#ModalPerfil">Perfil</a></li>
+              <li><a href="#">Mis Reservaciones</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Salir</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+  </div>
+</nav>
+
+<!--modal -->
+<div class="modal fade" id="ModalPerfil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content" style="background-color:rgb(229, 100, 116, 75%);">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <h2 class="modal-title" id="myModalLabel" style="color: white;">Perfil del Usuario</h2>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-md-6">
+            <br>
+            <a class="thumbnail">
+              <img src="../links/img/per1.jpg" alt="...">
+            </a>
+
+            <br>
+            <br>
+            <br>
+            <h4 style="color: white;">Ingresar su imagen de perfil</h4>
+          </div>
+          <div class="col-md-6">
+            <!-- conenido -->
+            <form>
+              <div class="form-group">
+                <h3 style="color: white;"> Nombre(s): </h3>
+                <input type="text" st class="form-control" id="exampleInputEmail1" placeholder="Nombre">
+                <h3 style="color: white;">Apellidos(s)</h3>
+                <input type="text" class="form-control" placeholder="Apellidos">
+                <label for="exampleInputEmail1">
+                  <h3 style="color: white;"> Email</h3>
+                </label>
+                <input type="email" st class="form-control" id="exampleInputEmail1" placeholder="Email">
+                <label for="exampleInputPassword1">
+                  <h3 style="color: white;">Password</h3>
+                </label>
+                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+              </div>
+              <br>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>

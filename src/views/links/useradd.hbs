@@ -1,0 +1,51 @@
+<div class="container">
+    <br>
+    <br>
+    <div class="row ">
+        <div class=" text-center">
+            <div class="card text-center">
+                <div class="card-cody">
+                    <div class="col-md-3"></div>
+                    <div class="col-md-6" style="background-color: #e58474;">
+                        <h1 style="color:black">Crear Usuario</h1>
+                        <br>
+                        <form class="form-horizontal text-center border border-light p-5"  action="/links/useradd" method="POST">
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label" style="color: white;" >Nombre</label>
+                                <div class="col-sm-6">
+                                    <input type="text" style="height:30px" class="form-control" name="name" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label"style="color: white;" >Apellido</label>
+                                <div class="col-sm-6">
+                                    <input type="text" style="height:30px"  class="form-control" name="last_name"  placeholder="Apellidos">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label" style="color: white;" >Correo Electronico</label>
+                                <div class="col-sm-6">
+                                    <input type="email" style="height:30px"  class="form-control" name="email" placeholder="email">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label" style="color: white;" >Contraseña</label>
+                                <div class="col-sm-6">
+                                    <input type="password" style="height:30px"  class="form-control" name="password" placeholder="Contraseña">
+                                </div>
+                            </div>
+                            
+                            <br>
+                            <div class="form-group" >
+                                <div class="col-sm-offset-2 col-sm-4" style="left: 250px;" >
+                                    <button class="btn btn-block btn-success col-md-2" style="font-size:17px"  name="send" id="" placeholder="Enviar">Guardar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col md-3"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

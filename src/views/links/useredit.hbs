@@ -1,0 +1,50 @@
+<div class="container">
+    <br>
+    <br>
+    <div class="row">
+        <div class=" text-center">
+            <div class="card text-center">
+                <div class="card-cody">
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8" style="background-image: url(/img/admin_fondo.jpg);">
+                        <h1 id="texttitle">Editar Usuario</h1>
+                        <br>
+                        <br>
+                        <form action="/links/useredit/{{link.id}}"
+                            class="form-horizontal text-center border border-light p-5" method="POST">
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" id="usertext"> Nombre</label>
+                                <div class="col-sm-6">
+                                    <input type="text" style="height:40px" value="{{link.name}}" class="form-control"
+                                        name="name" placeholder="Nombre">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" id="usertext">Apellido</label>
+                                <div class="col-sm-6">
+                                    <input type="text" style="height:40px" value="{{link.last_name}}"
+                                        class="form-control" name="last_name" placeholder="Apellidos">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label" id="usertext">Correo Electronico</label>
+                                <div class="col-sm-6">
+                                    <input type="email" style="height:40px" value="{{link.email}}" class="form-control"
+                                        name="email" placeholder="email">
+                                </div>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-4" style="left: 250px;">
+                                    <button class="btn btn-block btn-success col-md-2" style="font-size:17px"
+                                        name="send" id="" placeholder="Enviar">Guardar</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col md-2"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

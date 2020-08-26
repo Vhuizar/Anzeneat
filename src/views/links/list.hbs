@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row text-right">
+        <a href="/links/add" class='btn btn-primary'>Agregar Nuevo</a>
+    </div>
+    <div class="row">
+        {{#each links}}
+            <div class="col-md-4">
+                <div class="card ">
+                    <div class="card-body">
+                        <a href="{{url}}">
+                            <h3 class="card-tittle text-uppercase">
+                                   {{title}}
+                            </h3>
+                        </a>
+                        <h3 class="card-tittle text-uppercase">
+                            {{descripcion}}
+                        </h3>
+                        <h3 class="card-tittle text-uppercase">
+                            {{timeago timestamp}}
+                        </h3>
+                        <a href="/links/edit/{{id}}" class="btn btn-primary"> editar</a>
+                        <a href="/links/delete/{{id}}" class="btn btn-danger"> Eliminar</a>
+                    </div>
+                </div>
+            </div>
+        {{else}}
+            <div class="col-md-4"></div>
+            <div class="col-md-4 mx-auto">
+                <div class="card card-body text-center">
+                    <p><h3>No existe mas links</h3></p>
+
+                    <a href="/links/add" class="btn btn-info"> Agregar Nuevo</a>
+                </div>
+            </div>
+        {{/each}}
+    </div>
+</div>

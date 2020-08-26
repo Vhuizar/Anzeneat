@@ -1,0 +1,75 @@
+body{
+    background-color: rgb(57, 61, 66);;
+}
+
+#text1{
+    font-size: 20px;
+    font-family: fantasy;
+}
+#text{
+    color: white;
+}
+#nav{
+    background-color: darkred;
+}
+#textrest{
+    background-color: rgba(255, 255, 255, 0.815);
+    color:black; 
+    font-size: 20px;
+
+}
+#tablarest{
+    background-color: rgb(139, 0, 0,60%); 
+    color:white; 
+    font-size: 20px;
+}
+#usertext{
+    font-size: 20px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#texttitle{
+    font-size: 40px;
+    color: white;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+#addrest{
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#addimput{
+    height:40px;
+    width: 350px; 
+}
+#desc{
+    width: 350px; 
+    height: 90px;
+}
+#fondo_resv{
+    background-image: url(/img/fondo_resv.jpg);
+ 
+}
+#imgresv{
+    margin-top: 100px;
+    background-image: url(/img/resv1.jpg);
+    width: 483px;
+    height: 290px;
+    margin-left: 50px;
+}
+#rowr{
+    height: 500px;
+}
+#titler{
+    width: 600px;
+    font-size: 55px;
+    color:white;
+    margin-left: 50px;
+}
+#fondop{
+    background-image: url(/img/c7.jpg);
+    width: 70%;
+}
+#formp{
+    background-color: rgba(165, 42, 42, 0.87);
+    margin-left: 50px;
+}

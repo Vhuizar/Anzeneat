@@ -1,0 +1,224 @@
+<div class="container">
+    <div class="row text-center" style="background-color:rgba(197, 7, 7, 0.5)">
+        <h2 style="color:white ;">Listado de Restaurantes</h2>
+    </div>
+
+    <br>
+    <div class="row">
+        <div class="col-xs-6 col-md-4">
+            <h3 style="color: white;" class="text-center">Comida China Lucky</h3>
+            <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModalChina">
+                <img src="/img/res1.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h3 style="color: white;" class="text-center">Comida Brasileña Pampas</h3>
+            <a href="#" class="thumbnail btn" data-toggle="modal" data-target="#myModalBrasil">
+                <img src="/img/res2.jpg" alt="...">
+            </a>
+        </div>
+        <div class="col-xs-6 col-md-4">
+            <h3 style="color: white;" class="text-center">Comida Mexicana El Sureño</h3>
+            <a href="#" class="thumbnail" data-toggle="modal" data-target="#myModalMexico">
+                <img src="/img/res3.jpg" alt="...">
+            </a>
+        </div>
+        ...
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="myModalChina" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color:rgb(139, 0, 0, 65%);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel" style="color: white;">Restaurante Chino: {{lucky.name}}</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 style="color: white;">Ubicacion de google maps</h4>
+                            <br>
+                            <img src="/img/china/ubi1.jpg" alt="">
+                            <br>
+                            <br>
+                            <br>
+                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="color: white;">{{lucky.address}}</span>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- carrusel -->
+                            <div id="myCarouselC" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarouselC" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarouselC" data-slide-to="1"></li>
+                                    <li data-target="#myCarouselC" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <img src="/img/china/ch1.jpg" alt="">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/img/china/ch2.jpg" alt="">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/img/china/ch3.jpg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <br>
+                            <br>
+
+                            <p style="color: white;">
+                                {{lucky.description}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="/links/reservacion/{{lucky.id}}" type="button" class="btn btn-primary">Hacer Reservacion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModalMexico" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color:rgb(139, 0, 0, 65%);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel" style="color: white;">Restaurante Mexicano: {{sureño.name}}</h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 style="color: white;">Ubicacion de google maps</h4>
+                            <br>
+                            <img src="/img/Mexico/ubi.jpg" width="250px" height="200px" alt="">
+                            <br>
+                            <br>
+                            <br>
+                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="color: white;">{{sureño.address}}</span>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- carrusel -->
+                            <div id="myCarouselM" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarouselM" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarouselM" data-slide-to="1"></li>
+                                    <li data-target="#myCarouselM" data-slide-to="2"></li>
+                                    <li data-target="#myCarouselM" data-slide-to="3"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <img src="/img/Mexico/mex1.jpg" alt="">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/img/Mexico/mex2.jpg" alt="">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/img/Mexico/mex3.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="/img/Mexico/mex4.jpg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <br>
+                            <br>
+
+                            <p style="color: white;">
+                                {{sureño.description}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="/links/reservacion/{{sureño.id}}" type="button" class="btn btn-primary">Hacer Reservacion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="myModalBrasil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content" style="background-color:rgb(139, 0, 0, 65%);">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                            aria-hidden="true">&times;</span></button>
+                    <h2 class="modal-title" id="myModalLabel" style="color: white;">Restaurante Brasileño: {{pampas.name}} </h2>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h4 style="color: white;">Ubicacion de google maps</h4>
+                            <br>
+                            <img src="/img/Brasil/ubi.jpg" alt="">
+                            <br>
+                            <br>
+                            <br>
+                            <span class="glyphicon glyphicon-map-marker" aria-hidden="true" style="color: white;">{{pampas.address}} </span>
+                        </div>
+                        <div class="col-md-6">
+                            <!-- carrusel -->
+                            <div id="myCarouselB" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#myCarouselB" data-slide-to="0" class="active"></li>
+                                    <li data-target="#myCarouselB" data-slide-to="1"></li>
+                                    <li data-target="#myCarouselB" data-slide-to="2"></li>
+                                    <li data-target="#myCarouselB" data-slide-to="3"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+
+                                    <div class="item active">
+                                        <img src="/img/Brasil/bra1.jpg" alt="">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/img/Brasil/bra2.jpg" alt="">
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="/img/Brasil/bra3.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img src="/img/Brasil/bra4.jpg" alt="">
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <br>
+                            <br>
+
+                            <p style="color: white;">
+                                {{pampas.description}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <a href="/links/reservacion/{{pampas.id}}" type="button" class="btn btn-primary">Hacer Reservacion</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

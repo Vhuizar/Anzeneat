@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10" style="background-image: url(/img/c6.jpg);">
+            <br>
+            <div class="text-right">
+                <a href="/admuser" class='btn btn-primary'>Agregar Nuevo</a>
+            </div>
+            <br>
+            <h2 style="color:white; font-size: 40px;">Tabla de Usuarios</h2>
+            <br>
+            <div class="col-md-10">
+                <div class="card ">
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                   <th style="color: white;">Nombre</th>
+                                    <th style="color: white;">Apellidos</th>
+                                    <th style="color: white;">Email</th>
+                                    <th style="color: white;">Rol Usuario</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            {{#each users}}
+                <div class="col-md-12">
+                    <div class="card ">
+                        <div class="card-body">
+                            <table class="table">
+                                <tbody>
+                                    <tr class="info">
+                                        <td>{{name}}</td>
+                                        <td>{{last_name}}</td>
+                                        <td>{{email}}</td>
+                                        <th>{{rol}}</th>
+                                        <td><a href="/links/userdelet/{{id}}" class="btn btn-danger"> ELIMINAR</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            {{else}}
+                <div class="col-md-4"></div>
+                <div class="col-md-4 mx-auto">
+                    <div class="card card-body text-center">
+                        <p><h2>No existe ningun usuario</h2></p>
+                    </div>
+                </div>
+            {{/each}}
+        </div>
+        <div class="col-md-1"></div>
+    </div>
+</div>

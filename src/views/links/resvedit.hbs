@@ -1,0 +1,71 @@
+<div class="container" id="fondo_resv">
+    <div class="row" id="rowr">
+        <h1 id="titler">Editando tu Reservacion</h1>
+        <div class="col-md-4">
+            <img id="imgresv" alt="">
+        </div>
+        <div class="col-md-8">
+            <img src="/img/logo_resv.png" style="margin-left: 350px;" width="150px" height="150px" alt="">
+            <form action="/links/resvedit/{{res.id_resv}}" method="POST" class="form-horizontal text-center border border-light p-5">
+                <input type="text" name="fk_rest" hidden value="{{res.id}}">
+                <input type="text" name="fk_user" hidden value="{{user.id}}">
+
+                <label class=" control-label" id="textrest">Nombre Restaurante</label>
+                <div class="form-group">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                        <input type="text" id="addimput" readonly class="form-control" name="name" value="{{res.name}}"
+                            placeholder="Nombre">
+                    </div>
+                </div>
+                <label class=" control-label" id="textrest">Nombre Usuario</label>
+                <div class="form-group">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                        <input type="text" id="addimput" readonly class="form-control" name="name" value="{{user.name}} {{user.last_name}}"
+                            placeholder="Nombre">
+                    </div>
+                </div>
+                <label class=" control-label" id="textrest">Direccion del Restaurante</label>
+                <div class="form-group">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                        <input type="text" id="desc" readonly value="{{res.address}}" class="form-control" name="address"
+                            placeholder="ej. calle 1 col tal cp 0000 Torreon.coah ">
+                    </div>
+                </div>
+                <label class=" control-label" id="textrest">Numero de Telefono</label>
+                <div class="form-group">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                        <input type="text" id="addimput" readonly value="{{res.phone_numbre}}" class="form-control"
+                            name="phone_numbre" placeholder="ej. 9812463728">
+                    </div>
+                </div>
+                <label class=" control-label" id="textrest">Fecha</label>
+                <div class="form-group">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                        <input type="datetime-local" id="addimput" value="{{res.fecha}}"class="form-control" name="fecha" placeholder="ej. DD/MM/AAAA HH:MM">
+                    </div>
+                </div>
+                <label class=" control-label" id="textrest">Numero de Personas</label>
+                <div class="form-group">
+                    <div class="col-sm-4"></div>
+                    <div class="col-sm-8">
+                        <input type="text" id="addimput" value="{{res.per_adicional}}" class="form-control" name="per_adicional"
+                            placeholder="Solo se Admiten 4 personas maximo por Reservacion">
+                    </div>
+                </div>
+                <br>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-4" style="left: 250px;">
+                        <button class="btn btn-block btn-success col-md-2" style="font-size:17px"
+                            >Guardar</button>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</div>
